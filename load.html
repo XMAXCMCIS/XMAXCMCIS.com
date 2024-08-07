@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>load</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar</title>
+    <style>
+        .loading-bar {
+            width: 100%;
+            height: 4px;
+            background-color: #f3f3f3;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .loading-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #3498db;
+            animation: load 2s linear infinite;
+        }
+
+        @keyframes load {
+            0% {
+                left: -100%;
+            }
+            50% {
+                left: 100%;
+            }
+            100% {
+                left: -100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-bar"></div>
+</body>
+</html>
+
+index load...
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Redirect</title>
+    <script>
+        // 10초(10000밀리초) 후에 다른 페이지로 이동하는 함수
+        function redirectToPage() {
+            setTimeout(function() {
+                window.location.href = "index.html"; // 이동할 페이지 URL
+            }, 10000); // 10초 = 10000 밀리초
+        }
+    </script>
+</head>
+<body onload="redirectToPage()">
+    <h1></h1>
+</body>
+</html>

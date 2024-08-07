@@ -1,0 +1,8 @@
+ -----------------------------
+| 2024.8.7                    |
+| 1.new name XMAXCMCIS!       |
+| 2.add tercall               |
+| 3.delete logo imgs          |
+| 4.ver add                   |
+ -----------------------------
+
